@@ -123,6 +123,10 @@ body {
   animation: shake 250ms ease-in-out;
 }
 
+.tile.dance {
+  animation: dance 500ms ease-in-out;
+}
+
 .tile.flip {
   transform: rotateX(90deg);
 }
@@ -145,6 +149,27 @@ body {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes dance {
+  20% {
+    transform: translateY(-50%);
+  }
+  40% {
+    transform: translateY(5%);
+  }
+  60% {
+    transform: translateY(-25%);
+  }
+  80% {
+    transform: translateY(2.5%);
+  }
+  90% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
